@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_oswWMARXEeiXRJqbCTtqSw" name="NewModel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_CRmCYARYEeiXRJqbCTtqSw" name="modelo">
+    <packagedElement xmi:type="uml:Class" xmi:id="_D-2OYARYEeiXRJqbCTtqSw" name="Poligono" visibility="public">
+      <generalization xmi:id="_66joUATkEei-su_F9mmEnA" general="_jwhKoATkEei-su_F9mmEnA"/>
+      <ownedAttribute xmi:id="_oTUtEARYEeiXRJqbCTtqSw" name="ArrayList&lt;Float> puntos;">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zT9wAARYEeiXRJqbCTtqSw" value="1"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zT9wAQRYEeiXRJqbCTtqSw" value="1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_LlCMIATmEei-su_F9mmEnA" name="float precio"/>
+      <ownedAttribute xmi:id="_T93fUATmEei-su_F9mmEnA" name="String material;"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_jwhKoATkEei-su_F9mmEnA" name="PoligonoCarton" visibility="public"/>
+    <packagedElement xmi:type="uml:Interface" xmi:id="_ac08QATlEei-su_F9mmEnA" name="Basico" visibility="public">
+      <ownedOperation xmi:id="_7rJiUATlEei-su_F9mmEnA" name="setMaterial"/>
+      <ownedOperation xmi:id="_8BzHwATlEei-su_F9mmEnA" name="porcentajePrecio"/>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
