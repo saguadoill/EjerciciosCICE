@@ -76,6 +76,17 @@ public class Articulo implements IArticulo {
 	}
 
 	/**
+	 * Metodo que al devolver el articulo prestado, cambia la variable prestado de nuevo a false
+	 */
+	@Override
+	public void devolve() {
+		
+		this.setPrestado(false);
+		
+	}
+
+
+	/**
 	 * Metodo que comprueba si un articulo puede ser prestado o no.
 	 */
 	@Override
