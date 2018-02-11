@@ -14,6 +14,8 @@ public interface IArticulo {
 	boolean esPrestable(String nombreArticulo);
 	
 	void prestar();
+	
+	void devolve();
 
 	GregorianCalendar getFechaPublicacion();
 	
