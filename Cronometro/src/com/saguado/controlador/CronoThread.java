@@ -85,7 +85,7 @@ public class CronoThread extends Thread {
 
 	
 		if(milisegundos<10) {
-			mili.append("+").append(milisegundos);
+			mili.append("0").append(milisegundos);
 		}else {
 			mili.append(milisegundos);
 		}
