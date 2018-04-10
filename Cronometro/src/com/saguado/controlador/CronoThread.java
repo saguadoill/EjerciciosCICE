@@ -110,4 +110,12 @@ public class CronoThread extends Thread {
 		return tiempo.toString();
 	}	
 
+	public void reset() {
+		horas =0;
+		minutos = 0;
+		segundos =0;
+		milisegundos = 0;
+		main.setTiempo(tiempoFormateado());
+		
+	}
 }

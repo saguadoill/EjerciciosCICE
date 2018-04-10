@@ -19,6 +19,7 @@ public class CronoView extends javax.swing.JFrame {
 	private javax.swing.JLabel ImagenLabel;
 	private javax.swing.JPanel jPanel1;
 	private javax.swing.JTextField campoTiempo;
+	private CronoThread crono;
 	// End of variables declaration
 
 	/**
@@ -36,7 +37,7 @@ public class CronoView extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
-		CronoThread crono = new CronoThread(this);
+		crono = new CronoThread(this);
 		ImagenLabel = new javax.swing.JLabel();
 		campoTiempo = new javax.swing.JTextField();
 		btnIniciar = new javax.swing.JButton();
@@ -91,8 +92,18 @@ public class CronoView extends javax.swing.JFrame {
 		btnParar.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				campoTiempo.setText("00:00:00:00");
-				crono.setActivo(false);
+				
+				
+				try {
+					crono.setActivo(false);
+					Thread.sleep(10L);
+					crono.reset();
+				} catch (InterruptedException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
+				
 			}
 		});
 
